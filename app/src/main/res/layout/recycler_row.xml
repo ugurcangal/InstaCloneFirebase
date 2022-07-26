@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="#EDEDED"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/recyclerEmailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Email"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/recyclerImageView"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/recyclerCommentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="TESTESTESTEST"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

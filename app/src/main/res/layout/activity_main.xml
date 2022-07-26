@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/signUpTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/helveticabd"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticabd"
+        android:text="Login"
+        android:textColor="#45B75E"
+        app:layout_constraintBottom_toBottomOf="@id/signUpTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/signUpTxt" />
+
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/rectangle23"
+        android:ems="12"
+        android:fontFamily="@font/helveticalt"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle23"
+        android:ems="12"
+        android:fontFamily="@font/helveticalt"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/helveticalt"
+        android:gravity="left"
+        android:text="I Would like to receive your newsletter and other promotional information."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextPassword" />
+
+
+    <Button
+        android:id="@+id/girisYap"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/helveticabd"
+        android:text="sign ın"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkbox" />
+
+    <Button
+        android:id="@+id/kayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_rectangle_2"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/helveticabd"
+        android:text="sign up"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/girisYap" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
